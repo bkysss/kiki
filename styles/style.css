@@ -62,3 +62,62 @@ h1 {
     color: #00539f;
     text-shadow: 3px 3px 1px black;
 }
+
+/**
+ * 图片居中样式
+ */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * 头部容器样式 - 用于定位h1和按钮
+ */
+.header-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/**
+ * 按钮样式优化
+ */
+.change-user-btn {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/**
+ * 按钮悬停效果
+ */
+.change-user-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/**
+ * 按钮点击效果
+ */
+.change-user-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
