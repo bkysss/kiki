@@ -18,7 +18,13 @@ let myHeading = document.querySelector("h1");
 function setUserName() {
     const myName = prompt("输入新昵称");
     if (!myName) {
-        setUserName();
+        const originName = localStorage.getItem("name");
+        if (originName) {
+            myHeading.textContent = `My Cute ${originName}`;
+        }
+        else {
+            myHeading.textContent = `My Cute Kiki`;
+        }
     } else {
         localStorage.setItem("name", myName);
         myHeading.textContent = `My Cute ${myName}`;
